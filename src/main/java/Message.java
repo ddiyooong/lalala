@@ -1,17 +1,15 @@
-//package javabook.ch12;
-
 public class Message {
 	private String id;
-	private String passwd;
-	private String msg;
 	private String type;
+	private String msg;
+	private String file;
 	
 	public Message() {}
 	
-	public Message(String id, String passwd, String msg, String type) {
+	public Message(String id, String type, String msg,  String file) {
 		this.id = id;
-		this.passwd = passwd;
 		this.msg = msg;
+		this.file = file;
 		this.type = type;
 	}
 	public String getId() {
@@ -19,12 +17,6 @@ public class Message {
 	}
 	public void setId(String id) {
 		this.id = id;
-	}
-	public String getPasswd() {
-		return passwd;
-	}
-	public void setPassword(String passwd) {
-		this.passwd = passwd;
 	}
 	public String getMsg() {
 		return msg;
@@ -38,4 +30,6 @@ public class Message {
 	public void setType(String type) {
 		this.type = type;
 	}
+	public String getFile(){ return file; }
+	public void setFile(String file){ this.file = file;}
 }
